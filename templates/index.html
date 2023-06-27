@@ -2,6 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+    <title>ByteLife</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar hide">
+            <img src="{{ url_for('static', filename='Wallpaper_topbar.png') }}" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">BLOGS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+        </nav>
+    </div>
+    <div class="container2">
+        <div class="show-logo">
+            <img src="{{ url_for('static', filename='Wallpaper-removebg-preview.png') }}" alt="Logo" class="loading-logo">
+        </div>
+        
+        <div class="dummy">
+            <h1 id="h1" class="hide">We Are Under Development  </h1>
+            <h2 id="h2" class="hide">Till Then Follow us on our socials for updates!!</h2>
+            <img src="{{ url_for('static', filename='WHITE.png') }}" alt="Logo">
+            <div id="countdown" class="hide">
+                <span id="days">00</span>
+                <span>:</span>
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+            <div id="social1" class="social1 hide">
+                <a href="https://www.instagram.com/bytelife_/">
+                    <img src="https://cdn-icons-png.flaticon.com/256/87/87390.png" alt="instagram">
+                </a>
+            </div>
+            <div id="social2" class="social2 hide">
+                <a href="https://www.twitter.com/bytelife__/">
+                    <img src="https://cdn-icons-png.flaticon.com/256/733/733635.png" alt="twitter">
+                </a>
+            </div>
+            <div id="social3" class="social3 hide">
+                <a href="https://www.linkedin.com/company/bytelifee/">
+                    <img src="https://img.icons8.com/?size=256&id=8808&format=png" alt="linkedin">
+                </a>
+            </div>
+            <div id="social4" class="social4 hide">
+                <a href="https://www.youtube.com/channel/UCxQNeihknfhpGQb0VRKy1Zg">
+                    <img src="https://cdn-icons-png.flaticon.com/256/717/717426.png" alt="youtube">
+                </a>
+            </div>
+            
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='javascript/index.js') }}"></script>
+    
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ByteLife</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
@@ -30,4 +99,4 @@
         <span id="seconds">00</span>
     </div>
 </body>
-</html>
+</html> -->
