@@ -32,6 +32,23 @@
     font-size: 18px;
     position: relative;
   }
+  .social-media{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: center ;
+    align-items: center;
+    margin-left: 271px;
+    
+  }
+  .social{
+    margin: 10px 15px;
+   
+  }
+  .social img{
+    width: 40px;
+    
+  }
   .container2{
       position: relative;
   }
@@ -45,6 +62,7 @@
     align-items: center;
     transform: translateY(0);
     transition: transform 0.5s ease-in-out;
+    z-index: 2;
   }
   
   .loading-logo {
@@ -142,30 +160,99 @@
     background-color: black;
     border-radius: 5px;
 }
-.social1 {
+.dev-msg{
+  position: fixed;
+  top: 15%;
+  right: 33%;
+}
+@media only screen and (max-width: 1200px){
+    .navbar {
+    overflow: hidden;
+    background-color:#EFB0A1;
+    color: #333;
+    position: fixed;
+    top: -8%;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 1;
+    transform: translateY(0);
+    transition: transform 0.3s ease-in-out;
+    padding-left: 5px;
+  }
+  nav ul li {
+    display: inline;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  .social-media{
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: center ;
+    align-items: center;
+    margin-left: 271px;
+    
+  }
+  .social{
+    margin: 10px 15px;
+   
+  }
+  .social img{
+    width: 40px;
+    
+  }
+  .container2{
+      position: relative;
+  }
+  .show-logo {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #EFB0A1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in-out;
+    z-index: 2;
+  }
+}
+/* #social1 {
     position: fixed;
     bottom: 6%;
-    left: 20%;
+    left: 10%;
+    width: 30px;
     transform: translateX(-50%);
 }
-.social2 {
+#social2 {
     position: fixed;
     bottom: 50px;
     transform: translateX(-50%);
     left: 40%;
 }
-.social3 {
+#social3 {
     position: fixed;
     bottom: 50px;
     left: 60%;
     transform: translateX(-50%);
 }
-.social4 {
+#social4 {
     position: fixed;
     bottom: 50px;
     left: 80%;
     transform: translateX(-50%);
-}
+} */
 /* body {
     margin: 0;
     padding: 60px 60px 60px 0px;
