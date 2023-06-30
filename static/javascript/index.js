@@ -10,7 +10,7 @@ const social1 = document.querySelector("#social1")
 const social2 = document.querySelector("#social2")
 const social3 = document.querySelector("#social3")
 const social4 = document.querySelector("#social4")
-// ? timeline
+
 
 const tl = gsap.timeline();
 tl.to(logo, { scale: 1.5, duration: 1 });
@@ -22,21 +22,10 @@ window.addEventListener("scroll", () => {
   logoPage.style.transform = `translateY(-1000px)`;
   navbar.classList.remove("hide");
   setTimeout(()=>{
-    navbar.style.transform = `translateY(70px)`;
     countdown.classList.remove("hide");
-    h1.classList.remove("hide");
-    h2.classList.remove("hide");
-    social1.classList.remove("hide");
-    social2.classList.remove("hide");
-    social3.classList.remove("hide");
-    social4.classList.remove("hide");
+
     countdown.classList.add("fade-in");
-    h1.classList.add("fade-in");
-    h2.classList.add("fade-in");
-    social1.classList.add("fade-in");
-    social2.classList.add("fade-in");
-    social3.classList.add("fade-in");
-    social4.classList.add("fade-in");
+
   },500)
   const nl = gsap.timeline();
   nl.to(logo2, { x: 250, duration: 0.6, delay:0.9 });

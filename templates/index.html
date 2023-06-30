@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
       rel="stylesheet"
       type="text/css"
       href="{{ url_for('static', filename='css/index.css') }}"
@@ -13,55 +19,104 @@
     <title>ByteLife</title>
   </head>
   <body>
-    <div class="container">
-      <nav class="navbar hide">
-        <img
-          src="{{ url_for('static', filename='Wallpaper_topbar.png') }}"
-          alt="Logo"
-        />
-        <div class="social-media">
-          <div id="social1" class="social">
-            <a href="https://www.instagram.com/bytelife_/" target="_blank">
-              <img
-                src="https://cdn-icons-png.flaticon.com/256/87/87390.png"
-                alt="instagram"
-              />
-            </a>
-          </div>
-          <div id="social2" class="social" >
-            <a href="https://www.twitter.com/bytelife__/" target="_blank">
-              <img
-                src="https://cdn-icons-png.flaticon.com/256/733/733635.png"
-                alt="twitter"
-              />
-            </a>
-          </div>
-          <div id="social3" class="social" >
-            <a href="https://www.linkedin.com/company/bytelifee/" target="_blank">
-              <img
-                src="https://img.icons8.com/?size=256&id=8808&format=png"
-                alt="linkedin"
-              />
-            </a>
-          </div>
-          <div id="social4" class="social">
-            <a href="https://www.youtube.com/channel/UCxQNeihknfhpGQb0VRKy1Zg" target="_blank">
-              <img
-                src="https://cdn-icons-png.flaticon.com/256/717/717426.png"
-                alt="youtube"
-              />
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <div class="left">
+          <a class="navbar-brand" href="#"><img  src="{{ url_for('static', filename='output-onlinepngtools.png') }}" alt="ByteLife" class="nav-logo"></a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          
+          <div class="right mr-auto">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.instagram.com/bytelife_/"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/256/87/87390.png"
+                        alt="instagram"
+                        class="social"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.twitter.com/bytelife__/"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/256/733/733635.png"
+                        alt="twitter"
+                        class="social"
+                      />
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.linkedin.com/company/bytelifee/"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://img.icons8.com/?size=256&id=8808&format=png"
+                        alt="linkedin"
+                        class="social"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="https://www.youtube.com/channel/UCxQNeihknfhpGQb0VRKy1Zg"
+                      target="_blank"
+                    >
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/256/717/717426.png"
+                        alt="youtube"
+                        class="social"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-        <ul id="sidemenu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">BLOGS</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="container2">
+      </div>
+    </nav>
+    <!-- <div class="container2">
       <div class="show-logo">
         <img
           src="{{ url_for('static', filename='Wallpaper-removebg-preview.png') }}"
@@ -69,27 +124,30 @@
           class="loading-logo"
         />
       </div>
-
-      <div class="dummy">
-        <img src="{{ url_for('static', filename='WHITE.png') }}" alt="Logo" />
-        <div class="dev-msg">
-          <h1 class="under-dev1">We Are Under Development</h1><br>
-          <h2 class="under-dev2">
-            Till Then Follow us on our socials for updates!!
-          </h2>
-        <div id="countdown" class="hide">
-          <span id="days">00</span>
-          <span>:</span>
-          <span id="hours">00</span>
-          <span>:</span>
-          <span id="minutes">00</span>
-          <span>:</span>
-          <span id="seconds">00</span>
-        </div>
-        
-        </div>
+    </div> -->
+    <div class="dummy">
+      <div class="dev-msg">
+        <h1 class="under-dev1">We Are Under Development</h1><br>
+        <h2 class="under-dev2">
+          Till Then Follow us on our socials for updates!!
+        </h2>
       </div>
+      <div id="countdown" >
+        <span id="days">00</span>
+        <span>:</span>
+        <span id="hours">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+      </div>
+      
     </div>
     <script src="{{ url_for('static', filename='javascript/index.js') }}"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
