@@ -115,12 +115,42 @@
   background-color: black;
   border-radius: 5px;
 }
-
-@media only screen and (max-width: 900px){
-  #countdown {
+@media only screen and (max-width: 885px){
+  #countdown{
     font-size: 4rem;
+    font-weight: 600;
   }
+}
+@media only screen and (max-width: 670px){
+  #countdown{
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+}
 
+@media only screen and (max-width: 638px){
+  #countdown {
+    font-size: 2.5rem;
+  }
+  .dev-msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 512px){
+  #countdown{
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+}
+@media only screen and (max-width: 512px){
+  #countdown{
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
 }
 
 /* @media only screen and (max-width: 1200px){
